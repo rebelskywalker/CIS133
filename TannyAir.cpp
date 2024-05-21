@@ -1,6 +1,6 @@
 /*
 Christopher Baker
-Homework 1 V2: Tanny Air 1 V2
+Homework 1 V3: Tanny Air C 
 Date Due: 2/21/2017
 Compiler used: Visual Studio 2015
 Description: Tanny's airline is a new kickstarter that only has 1 plane available to fit 10 passengers. Tanny has barked the orders to set up
@@ -8,17 +8,7 @@ Description: Tanny's airline is a new kickstarter that only has 1 plane availabl
 			 file such that when tanny airlines owns the skies we may be able to use that information in other files. 
 */
 #include <iostream>
-#include "Tannyheader.h" // Pull info and access .h class and structs 
-
-
-
-
-int main() // Where it all begins
-{
-	menu(); // call menu function to display menu options. Every function will flow from here to have passenger info entered, displayed, or for the user to exit the program.
-	return 0; // return 0 when finished with the program to exit. This line will immediately follow the quit function.
-}
-
+#include "Tannyheaderc.h" // Pull info and access .h class and structs 
 
 
 void Data::display() // iterates through the passenger index to display passenger info
@@ -35,52 +25,9 @@ void Data::display() // iterates through the passenger index to display passenge
 
 
 	system("pause");
-	menu();
+
 }
 
-void menu() // Simple menu to test entered characters to call the functions to enter info, display info, or quit the program
-{
-	char answer = 0;
-
-	std::cout << "(E)nter the passenger information" << std::endl;
-	std::cout << "(D)isplay the passenger information" << std::endl;
-	std::cout << "(Q)uit the program" << std::endl;
-
-
-	std::cout << std::endl;
-	std::cout << "Enter character: ";
-	std::cin >> answer;
-	std::cout << std::endl;
-
-	while (std::cin.fail())
-	{
-		std::cout << "Input Error - Please input character e, d, or q" << std::endl;
-		std::cin.clear();
-		std::cin.ignore(256, 'n');
-		std::cin >> answer;
-	}
-	if (answer == 'e' || answer == 'E')
-	{
-		dataobj.enter();
-	}
-	else if (answer == 'd' || answer == 'D')
-	{
-		dataobj.display();
-	}
-	else if (answer == 'q' || answer == 'Q')
-	{
-		dataobj.quit();
-	}
-	else
-	{
-		system("CLS");
-		std::cout << "Input Error- Please enter a character in any of the parenthesis \n" << std::endl;
-		std::cin.ignore();
-		menu();
-
-
-	}
-}
 
 void Data::quit()
 {
@@ -97,7 +44,7 @@ void Data::enter() // allows the user to enter information and provides basic er
 	{
 		system("CLS");
 		std::cout << "Tanny's airline is full, please see (d)isplayed passengers \nor (e)xit the program. No more entries allowed.\n";
-		menu();
+		
 	}
 
 
@@ -120,7 +67,7 @@ void Data::enter() // allows the user to enter information and provides basic er
 		std::cin.ignore(256, '\n');
 		std::cin >> num;
 	}
-	
+
 	passengerArray[i].FltNum = num;
 
 	std::cout << "Priority: " << std::endl; // List the suboptions for priority
@@ -162,6 +109,57 @@ void Data::enter() // allows the user to enter information and provides basic er
 	i++; // If entered info correctly, level up index
 	x++; // Index limiter Levels Up as well
 	system("CLS");
-	menu(); // head back to the menu to give more options
+
 }
 
+
+
+
+int main() // Where it all begins
+{
+	bool finished = false;
+	while (!finished)
+	{
+		char answer = 0;
+
+		std::cout << "(E)nter the passenger information" << std::endl;
+		std::cout << "(D)isplay the passenger information" << std::endl;
+		std::cout << "(Q)uit the program" << std::endl;
+
+
+		std::cout << std::endl;
+		std::cout << "Enter character: ";
+		std::cin >> answer;
+		std::cout << std::endl;
+
+		while (std::cin.fail())
+		{
+			std::cout << "Input Error - Please input character e, d, or q" << std::endl;
+			std::cin.clear();
+			std::cin.ignore(256, 'n');
+			std::cin >> answer;
+		}
+		if (answer == 'e' || answer == 'E')
+		{
+			dataobj.enter();
+		}
+		else if (answer == 'd' || answer == 'D')
+		{
+			dataobj.display();
+		}
+		else if (answer == 'q' || answer == 'Q')
+		{
+			finished = true;
+		}
+		else
+		{
+			system("CLS");
+			std::cout << "Input Error- Please enter a character in any of the parenthesis \n" << std::endl;
+			std::cin.ignore();
+
+		}
+		system("CLS");
+	}
+
+	return 0;
+}
