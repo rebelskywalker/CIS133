@@ -44,5 +44,5 @@ Data Structures and Algorithms (C++)
 
 # Group Project Diagram
 
-![Preview](https://github.com/rebelskywalker/CIS133/untitledModelactivity3.png)
+![Preview](https://github.com/rebelskywalker/CIS133/blob/main/untitledModelactivity3.png)
 
