@@ -42,4 +42,7 @@ Data Structures and Algorithms (C++)
 | Avg                | 72.3      | 90.0       |            |
 | Hi                 | 93.0      | 105.0      |            |
 
+# Group Project Diagram
+
+![Preview](https://github.com/rebelskywalker/CIS133/untitledModelactivity3.png)
 
