@@ -45,6 +45,29 @@ Data Structures and Algorithms (C++)
 | Hi                 | 93.0      | 105.0      | 100.0      | 105.0     | 100.0      | 105.0     | 100.1      | 101.7     | 98.8       |         |        |            |          |          |         |         |            |           |       |             |   |
 | Hi                 | 93.0      | 105.0      |            |           |            |           |            |           |            |         |        |            |          |          |         |         |            |           |       |             |   |
 
+# HASH GROUP PROJECT: WE HAD THE BEST CLASS RECORD (Hash Table Size of 37, Max Collisions of 2, No Empty Buckets)
+| T=37,   M = 3 |   | f,k,v,w,y,g |   |    e,r,a,I,n,o,t   |   |   Rest   of Alphabet   |   | Max   Collisions |   | Empty   Buckets |   |   |   |   |   |   |   |   |   |   |   |
+|:-------------:|:-:|:-----------:|:-:|:------------------:|:-:|:----------------------:|:-:|:----------------:|:-:|:---------------:|:-:|---|---|---|---|---|---|---|---|---|---|
+|       0       |   |   Hash + 3  |   |        Hash        |   |   Hash + (int)key[i]   |   |         2        |   |        0        |   |   |   |   |   |   |   |   |   |   |   |
+|       1       |   |   Hash + 1  |   |        Hash        |   |   Hash + (int)key[i]   |   |         3        |   |        0        |   |   |   |   |   |   |   |   |   |   |   |
+|       2       |   |   Hash + 2  |   |        Hash        |   |   Hash + (int)key[i]   |   |         3        |   |        0        |   |   |   |   |   |   |   |   |   |   |   |
+|       3       |   |   Hash + 5  |   |        Hash        |   |   Hash + (int)key[i]   |   |         3        |   |        1        |   |   |   |   |   |   |   |   |   |   |   |
+|       4       |   |   Hash + 6  |   |        Hash        |   |   Hash + (int)key[i]   |   |         4        |   |        1        |   |   |   |   |   |   |   |   |   |   |   |
+|       5       |   |   Hash + 9  |   |        Hash        |   |   Hash + (int)key[i]   |   |         4        |   |        1        |   |   |   |   |   |   |   |   |   |   |   |
+|       6       |   |  Hash + 11  |   |        Hash        |   |   Hash + (int)key[i]   |   |         3        |   |        1        |   |   |   |   |   |   |   |   |   |   |   |
+|       7       |   |   Hash + 3  |   |      Hash + 1      |   |   Hash + (int)key[i]   |   |         3        |   |        0        |   |   |   |   |   |   |   |   |   |   |   |
+|       8       |   |   Hash + 3  |   |      Hash + 2      |   |   Hash + (int)key[i]   |   |         5        |   |        2        |   |   |   |   |   |   |   |   |   |   |   |
+|       9       |   |   Hash + 3  |   |      Hash + 5      |   |   Hash + (int)key[i]   |   |         4        |   |        2        |   |   |   |   |   |   |   |   |   |   |   |
+|       10      |   |   Hash + 3  |   |      Hash + 6      |   |   Hash + (int)key[i]   |   |         4        |   |        0        |   |   |   |   |   |   |   |   |   |   |   |
+|       11      |   |   Hash + 3  |   |      Hash + 9      |   |   Hash + (int)key[i]   |   |         4        |   |        0        |   |   |   |   |   |   |   |   |   |   |   |
+|       12      |   |   Hash + 3  |   |      Hash + 11     |   |   Hash + (int)key[i]   |   |         4        |   |        3        |   |   |   |   |   |   |   |   |   |   |   |
+|       13      |   |   Hash + 3  |   |      Hash + 33     |   |   Hash + (int)key[i]   |   |         3        |   |        1        |   |   |   |   |   |   |   |   |   |   |   |
+|       14      |   |   Hash + 1  |   | Hash + (int)key[i] |   | Hash + (int)key[i] + 9 |   |         5        |   |        2        |   |   |   |   |   |   |   |   |   |   |   |
+|       15      |   |   Hash % 3  |   | Hash + (int)key[i] |   | Hash + (int)key[i] + 9 |   |         7        |   |        1        |   |   |   |   |   |   |   |   |   |   |   |
+|       16      |   |  Hash  * 2  |   | Hash + (int)key[i] |   | Hash + (int)key[i] + 9 |   |         3        |   |        0        |   |   |   |   |   |   |   |   |   |   |   |
+|       17      |   |   Hash / 4  |   | Hash + (int)key[i] |   | Hash + (int)key[i] + 9 |   |         4        |   |        0        |   |   |   |   |   |   |   |   |   |   |   |
+
+
 # GRADES 1
 | CSCI 133 CRN 24235 |           |            |            |
 |--------------------|-----------|------------|------------|
@@ -89,4 +112,6 @@ Data Structures and Algorithms (C++)
 # Group Project Diagram
 
 ![Preview](https://github.com/rebelskywalker/CIS133/blob/main/untitledModelactivity3.png)
+
+
 
