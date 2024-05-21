@@ -1,6 +1,6 @@
 /*
 Christopher Baker
-Homework 1 V2: Tanny Air 1 V2
+Homework 1 V3: Tanny Air C
 Date Due: 2/21/2017
 Compiler used: Visual Studio 2015
 Description: Tanny's airline is a new kickstarter that only has 1 plane available to fit 10 passengers. Tanny has barked the orders to set up
@@ -11,7 +11,6 @@ Description: Tanny's airline is a new kickstarter that only has 1 plane availabl
 #pragma once // To avoid def
 #include <string>  // include string
 
-void menu(); // Prototype the menu function which will be the initial function in the program
 
 /*
 struct passenger will hold the data members first name, last name, flight number, and priority. 
@@ -57,7 +56,6 @@ private:
 };
 
 Data dataobj; // Class Data object created
-
 
 
 
